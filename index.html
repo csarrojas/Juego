@@ -236,27 +236,24 @@
 }
 
 .modal-contenido {
-    width: 80% !important;
-    height: 80vh !important; /* Limitamos la altura */
-    display: flex !important;
-    flex-direction: row !important; /* Imagen y texto lado a lado */
-    align-items: center;
-    padding: 20px !important;
-    position: relative;
-    border: 2px solid #00ffff;
+    height: 85vh !important;       /* Un poco más alta que la de preguntas */
+    width: 85% !important;
+    gap: 20px;
 }
 
 .modal-izquierda { flex: 1.5; display: flex; justify-content: center; align-items: center; }
 .modal-derecha {
-    padding-left: 20px;
-    text-align: left;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .img-grande {
-    width: 150px !important; /* Reducido para que no tape todo */
-    height: 150px !important;
+    width: 200px !important;       /* Aumentado de 150px a 200px */
+    height: 200px !important;      /* Aumentado de 150px a 200px */
     object-fit: contain;
+    flex-shrink: 0;                /* OBLIGATORIO: Evita que el texto la aplaste */
+}
 
 .texto-descripcion {
     font-family: 'Rajdhani', sans-serif; font-size: 1.8rem; color: #00ffff;
@@ -274,9 +271,8 @@
 }
 
 #modal-nombre {
-    font-size: 1.2rem !important;
-    margin-top: 0;
-    color: #00ffff;
+    font-size: 1.5rem !important;  /* Nombre más visible */
+    margin-bottom: 10px;
 }
 
 #modal-desc {
@@ -286,59 +282,40 @@
 
 /* Nueva regla para que el contenedor de preguntas se ajuste al celular */
 #preguntas > div {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 15px !important;
-    padding: 10px 20px !important;
-    
-    /* AJUSTES PARA EVITAR DESBORDE */
-    width: 92% !important;        /* Un poco más angosto para dejar aire a los lados */
-    height: 82vh !important;       /* Reducido de 85vh para que no toque los bordes */
-    margin: auto !important;       /* Centrado automático en pantalla */
-    margin-top: 4vh !important;    /* Margen superior mínimo */
-    
-    border: 2px solid #00ffff;
-    background: rgba(0,0,0,0.85);
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    height: 80vh !important;       /* Altura fija para que no crezca más */
+    max-height: 80vh !important;
+    padding: 5px 15px !important;  /* Relleno interno muy pequeño */
+    gap: 10px !important;          /* Espacio mínimo entre el '?' y el texto */
+    margin-top: 2vh !important;    /* Pegado casi al borde superior */
+    overflow: hidden;              /* Evita que cualquier elemento interno lo estire */
 }
 
 /* Achica el círculo del signo de interrogación */
 .incognita-container {
-    width: 140px !important; 
-    height: 140px !important;
-    flex-shrink: 0; /* Evita que se aplaste */
-    border-width: 4px !important; /* Un borde un poco más grueso para que destaque */
+    width: 110px !important;       /* Ajuste de tamaño intermedio */
+    height: 110px !important;
 }
 
 #incognita {
-    font-size: 80px !important;
+    font-size: 60px !important;
 }
 
 /* Ajusta el texto de la pregunta para que no sea gigante */
 #enunciadoPregunta {
-    font-size: 1.2rem !important;
-    margin-bottom: 10px;
-    text-align: center;
+    font-size: 1rem !important;    /* Letra más pequeña para ganar espacio */
+    margin-bottom: 5px !important;
+    line-height: 1.1;
 }
 
 /* Hace que las opciones salgan una debajo de otra en el celular */
 #contenedorOpciones {
-    display: grid !important;
-    /* Esto crea dos columnas de igual tamaño */
-    grid-template-columns: repeat(2, 1fr) !important; 
-    gap: 8px !important;
-    width: 100%;
-    margin-top: 10px;
+    gap: 5px !important;           /* Botones más juntos */
 }
 
 #contenedorOpciones .btn-neon {
-    padding: 6px 10px !important; /* Botones más delgados verticalmente */
-    font-size: 0.9rem !important;  /* Letra más pequeña para que no sature */
-    min-height: 40px !important;   /* Controlamos la altura del botón */
-    margin: 0 !important;
+    min-height: 30px !important;   /* Botones más chatos */
+    padding: 4px !important;
+    font-size: 0.8rem !important;
 }
 
     </style>
