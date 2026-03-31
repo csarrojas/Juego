@@ -45,10 +45,16 @@
         }
         
         .contenedor-principal-equipo {
-    display: flex;
-    align-items: center;
-    gap: 40px; /* Vuelve al espacio original */
-    margin-top: 5vh;
+    display: flex !important;
+    flex-direction: row !important; /* Mantiene personaje y cuadro lado a lado */
+    align-items: flex-end !important; /* Alinea los elementos a la base del contenedor */
+    gap: 30px !important;
+    
+    /* Aumentamos este valor para empujar todo hacia abajo */
+    margin-top: 15vh !important; 
+    
+    /* Aseguramos que el contenedor ocupe el resto del alto disponible */
+    height: 75vh !important; 
 }
 
         .equipo-container { display: flex; justify-content: space-around; gap: 15px; margin-top: 5px; }
@@ -84,8 +90,10 @@
 }
 
 #equipo {
-    justify-content: flex-end !important; /* Empuja todo hacia abajo */
-    padding-bottom: 3vh !important;       /* Deja el botón casi al borde */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important; /* Cambiamos de center a flex-start */
+    padding-top: 0 !important;
 }
         .carrusel-bloqueado { 
             display: grid; 
@@ -113,9 +121,10 @@
         #btnIniciarMision {
     padding: 5px 15px !important; /* Más pequeño que el original */
     font-size: 0.85rem !important;   /* Letra más compacta */
-    margin-top: 8px !important;
+    margin-top: 5px !important;
     width: auto !important;         /* Para que no sea tan ancho */
     border-width: 1px !important;
+    margin-bottom: 10px !important;
 }
 
         #introduccion, #ciudad-intro { justify-content: flex-start; align-items: flex-start; padding-left: 8vw; }
