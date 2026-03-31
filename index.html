@@ -255,13 +255,23 @@
 
 /* Nueva regla para que el contenedor de preguntas se ajuste al celular */
 #preguntas > div {
-    flex-direction: row !important; /* En horizontal, mejor uno al lado del otro */
-    gap: 15px !important; 
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 15px !important;
     padding: 10px 20px !important;
-    width: 95% !important;
-    height: 85vh !important; /* Altura máxima para que no se desborde */
-    align-items: center;
-    justify-content: space-around;
+    
+    /* AJUSTES PARA EVITAR DESBORDE */
+    width: 92% !important;        /* Un poco más angosto para dejar aire a los lados */
+    height: 82vh !important;       /* Reducido de 85vh para que no toque los bordes */
+    margin: auto !important;       /* Centrado automático en pantalla */
+    margin-top: 4vh !important;    /* Margen superior mínimo */
+    
+    border: 2px solid #00ffff;
+    background: rgba(0,0,0,0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
 
 /* Achica el círculo del signo de interrogación */
