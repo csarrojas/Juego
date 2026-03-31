@@ -252,6 +252,41 @@
     color: #ff4400; cursor: pointer; font-family: 'Orbitron';
 }
 
+
+/* Nueva regla para que el contenedor de preguntas se ajuste al celular */
+#preguntas > div {
+    flex-direction: column !important; /* Apila el signo '?' y el texto arriba/abajo */
+    gap: 15px !important; 
+    padding: 20px !important; 
+    margin-top: 5vh !important; 
+    width: 90% !important;
+    height: auto !important;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Achica el círculo del signo de interrogación */
+.incognita-container {
+    width: 120px !important; 
+    height: 120px !important;
+}
+
+#incognita {
+    font-size: 60px !important;
+}
+
+/* Ajusta el texto de la pregunta para que no sea gigante */
+#enunciadoPregunta {
+    font-size: 1.5rem !important;
+    text-align: center;
+}
+
+/* Hace que las opciones salgan una debajo de otra en el celular */
+#contenedorOpciones {
+    grid-template-columns: 1fr !important; 
+    width: 100%;
+}
+
     </style>
 </head>
 <body>
