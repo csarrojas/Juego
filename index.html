@@ -256,23 +256,24 @@
 /* Nueva regla para que el contenedor de preguntas se ajuste al celular */
 #preguntas > div {
     flex-direction: row !important; /* En horizontal, mejor uno al lado del otro */
-    gap: 20px !important; 
-    padding: 15px !important;
-    width: 90% !important;
-    height: 80vh !important; /* Altura máxima para que no se desborde */
+    gap: 15px !important; 
+    padding: 10px 20px !important;
+    width: 95% !important;
+    height: 85vh !important; /* Altura máxima para que no se desborde */
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 /* Achica el círculo del signo de interrogación */
 .incognita-container {
-    width: 100px !important; 
-    height: 100px !important;
+    width: 140px !important; 
+    height: 140px !important;
     flex-shrink: 0; /* Evita que se aplaste */
+    border-width: 4px !important; /* Un borde un poco más grueso para que destaque */
 }
 
 #incognita {
-    font-size: 50px !important;
+    font-size: 80px !important;
 }
 
 /* Ajusta el texto de la pregunta para que no sea gigante */
@@ -287,9 +288,16 @@
     display: grid !important;
     /* Esto crea dos columnas de igual tamaño */
     grid-template-columns: repeat(2, 1fr) !important; 
-    gap: 10px !important;
+    gap: 8px !important;
     width: 100%;
     margin-top: 10px;
+}
+
+#contenedorOpciones .btn-neon {
+    padding: 6px 10px !important; /* Botones más delgados verticalmente */
+    font-size: 0.9rem !important;  /* Letra más pequeña para que no sature */
+    min-height: 40px !important;   /* Controlamos la altura del botón */
+    margin: 0 !important;
 }
 
     </style>
