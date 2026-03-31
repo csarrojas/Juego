@@ -36,18 +36,18 @@
         }
 
         #nombreFinal {
-            font-size: 7vh; 
+            font-size: 4vh; 
             color: #fff; 
             text-shadow: 0 0 20px #00ffff; 
             text-align: center; 
-            margin-top: -1vh;
+            margin-top: 1vh;
             margin-bottom: 2vh;
         }
         
         .contenedor-principal-equipo {
-            display: flex; width: 95%; max-width: 1150px; gap: 25px; 
+            display: flex; width: 95%; max-width: 1150px; gap: 10px; 
             justify-content: center; align-items: flex-start; 
-            margin-top: 10vh;
+            margin-top: 2vh;
         }
 
         .equipo-container { display: flex; justify-content: space-around; gap: 15px; margin-top: 5px; }
@@ -68,20 +68,20 @@
         }
 
         .equipo-icono { 
-            width: 120px; height: 120px; object-fit: contain; 
+            width: 60px; height: 60px; object-fit: contain; 
             filter: drop-shadow(0 0 15px #00ffff);
         }
 
         .carrusel-bloqueado { 
             display: grid; 
             grid-template-columns: repeat(5, 1fr); 
-            gap: 12px; 
-            margin-top: 25px; 
+            gap: 5px; 
+            margin-top: 10px; 
             width: 100%; 
             justify-items: center; 
         }
         .slot-bloqueado {
-            width: 60px; height: 60px; 
+            width: 40px; height: 40px; 
             background: rgba(40, 40, 40, 0.8); 
             border: 2px solid #333; 
             border-radius: 10px;
@@ -99,9 +99,10 @@
 
         .intro-text-container {
             font-family: 'Rajdhani', sans-serif;
-            font-weight: 700; font-size: 4.5vh; line-height: 1.4;
-            color: rgba(255, 255, 255, 0.95); max-width: 80%;
+            font-weight: 700; font-size: 1.2rem; line-height: 1.4;
+            color: rgba(255, 255, 255, 0.75); max-width: 90%;
             text-shadow: 3px 3px 15px rgba(0,0,0,0.9);
+	    margin-top: 80px;
             min-height: 35vh; text-align: left;
             z-index: 5;
         }
@@ -135,7 +136,7 @@
         }
 
         .titulo-ciudad {
-            color: #00ffff; font-size: 6rem; font-weight: 800;
+            color: #00ffff; font-size: 3rem; font-weight: 800;
             text-shadow: 0 0 30px #00ffff; margin: 0; font-family: 'Orbitron';
             position: absolute; top: 40px; left: 0; width: 100%; text-align: center;
             z-index: 1;
@@ -150,16 +151,16 @@
         .acierto-pulso { border-color: #00ff00; box-shadow: 0 0 50px #00ff00; animation: pulse-green 1s infinite; }
 
         .layout-mejoras {
-            display: flex; width: 100%; height: 70vh;
+            display: flex; width: 100%; height: 60vh;
             justify-content: space-between; align-items: center;
-            padding: 0 50px; box-sizing: border-box;
+            padding: 0 10px; box-sizing: border-box;
         }
 
         .panel-lateral {
             background: rgba(0, 0, 0, 0.65);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(0, 255, 255, 0.3);
-            border-radius: 15px; padding: 25px; width: 320px;
+            border-radius: 15px; padding: 15px; width: 260px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
@@ -172,7 +173,7 @@
         .plata { color: #e0e0e0; }
         .bronce { color: #cd7f32; }
 
-        .stat-valor-texto { font-size: 1.5rem; margin-bottom: 5px; display: flex; justify-content: space-between; }
+        .stat-valor-texto { font-size: 1rem; margin-bottom: 5px; display: flex; justify-content: space-between; }
 
 #tienda {
     justify-content: flex-start;
