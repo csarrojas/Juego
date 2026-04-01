@@ -418,7 +418,7 @@
     </div>
 
     <div id="detalles" class="page">
-        <button class="btn-neon btn-back" id="btnBackDetalles" onclick="nav('eleccion')">VOLVER</button>
+        //<button class="btn-neon btn-back" id="btnBackDetalles" onclick="nav('eleccion')">VOLVER</button>
         <h1 style="font-family: 'Audiowide'; font-size: 5vh; color: #00ffff; text-shadow: 0 0 15px #00ffff; margin-top: 20px; position: absolute; top: 10px;" id="txtTitulo">Cargando...</h1>
 
         <div class="layout-mejoras">
@@ -457,6 +457,12 @@
             </div>
         </div>
         
+	<div style="width: 100%; display: flex; justify-content: center; margin-bottom: 20px;">
+            <button class="btn-neon" id="btnBackDetalles" onclick="nav('eleccion')" style="width: 200px; position: static;">
+                VOLVER
+            </button>
+        </div>
+
         <div id="registroContenedor" style="width: 100%; background: rgba(0,0,0,0.85); padding: 20px 0; display: flex; justify-content: center; align-items: center; gap: 15px; border-top: 1px solid #00ffff;">
             <input type="text" id="nombreHeroe" style="background: #000; border: 1px solid #00ffff; color: white; padding: 10px; font-family: 'Orbitron'; width: 250px;" placeholder="NOMBRE HÉROE..." maxlength="12">
             <button class="btn-neon" id="btnConfirmar">REGISTRAR</button>
