@@ -391,17 +391,18 @@
 }
 
 .texto-neon-verde {
-    color: #00ff00 !important; /* Verde neón */
+    color: #ffffff !important; /* Letra blanca para máxima legibilidad */
     font-weight: 800;
     
-    /* Cambiamos el negro por un gris grafito suave para el contorno */
+    /* El resplandor verde se mantiene alrededor del blanco */
     text-shadow: 
-        -1px -1px 0 rgba(40, 40, 40, 0.8),  
-         1px -1px 0 rgba(40, 40, 40, 0.8),
-        -1px  1px 0 rgba(40, 40, 40, 0.8),
-         1px  1px 0 rgba(40, 40, 40, 0.8), 
-         0 0 12px #00ff00, /* Resplandor neón un poco más difuso */
-         0 0 20px rgba(0, 0, 0, 0.5); /* Sombra de fondo muy sutil */
+        -1px -1px 0 rgba(80, 80, 80, 0.5),  
+         1px -1px 0 rgba(80, 80, 80, 0.5),
+        -1px  1px 0 rgba(80, 80, 80, 0.5),
+         1px  1px 0 rgba(80, 80, 0.5), 
+         0 0 10px #00ff00, /* Primer halo verde */
+         0 0 20px #00ff00, /* Segundo halo verde más difuso */
+         0 0 30px rgba(0, 255, 0, 0.3); /* Brillo ambiental */
 }
 
 .contenedor-oscura-ciudad2 {
