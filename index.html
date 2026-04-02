@@ -391,17 +391,17 @@
 }
 
 .texto-neon-verde {
-    color: #00ff00 !important; /* Verde neón puro */
-    font-weight: 800; /* Un poco más de grosor ayuda a la lectura */
+    color: #00ff00 !important; /* Verde neón */
+    font-weight: 800;
     
-    /* Esta combinación de sombras crea el contraste sin necesidad de cuadros */
+    /* Cambiamos el negro por un gris grafito suave para el contorno */
     text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000, /* Bordes negros nítidos de 1px */
-         0 0 10px #00ff00, /* Resplandor neón */
-         0 0 20px rgba(0, 0, 0, 0.8); /* Sombra difusa externa para profundidad */
+        -1px -1px 0 rgba(40, 40, 40, 0.8),  
+         1px -1px 0 rgba(40, 40, 40, 0.8),
+        -1px  1px 0 rgba(40, 40, 40, 0.8),
+         1px  1px 0 rgba(40, 40, 40, 0.8), 
+         0 0 12px #00ff00, /* Resplandor neón un poco más difuso */
+         0 0 20px rgba(0, 0, 0, 0.5); /* Sombra de fondo muy sutil */
 }
 
 .contenedor-oscura-ciudad2 {
