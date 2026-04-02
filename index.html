@@ -391,16 +391,21 @@
 }
 
 .texto-neon-verde {
-    color: #00ff00 !important;
-    /* Crea un contorno negro para que resalte sobre fondos claros */
-    -webkit-text-stroke: 0.5px black; 
+    color: #39FF14 !important; /* Verde Neón intenso */
     text-shadow: 
-        2px 2px 4px rgba(0, 0, 0, 0.9), /* Sombra oscura para contraste */
-        0 0 10px #00ff00, 
-        0 0 20px #00ff00;
-    font-weight: bold;
+        0 0 5px #39FF14, 
+        0 0 10px #39FF14, 
+        0 0 20px rgba(57, 255, 20, 0.6);
+    transition: all 0.5s ease;
 }
 
+.contenedor-oscura-ciudad2 {
+    background: rgba(0, 0, 0, 0.6) !important; /* Capa negra traslúcida */
+    backdrop-filter: blur(5px); /* Opcional: desenfoca un poco el fondo */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00ff00; /* Borde neón para que combine */
+}
     </style>
 </head>
 <body>
@@ -774,8 +779,10 @@
     // --- LÓGICA DE NEÓN VERDE ---
     if (ciudadActual === 2) {
         cont.classList.add('texto-neon-verde');
+	cont.classList.add('contenedor-oscura-ciudad2');
     } else {
         cont.classList.remove('texto-neon-verde');
+	cont.classList.remove('contenedor-oscura-ciudad2');
     }
             
             let lineas = [];
