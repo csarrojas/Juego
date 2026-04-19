@@ -875,12 +875,14 @@
     }
             
             let lineas = [];
-            if(ciudadActual === 1) lineas = ["EN ALGÚN LUGAR DE AMÉRICA...", "Aquí rige una única ley:", "'El conocimiento no se regala, se arrebata'.", "Derrota al Guardián de la ciudad  en sus pruebas", "Y reclama por derecho de conquista todo su conocimiento.", "Falla en el intento y te irás con las manos vacias."];
+            if(ciudadActual === 1) { lineas = ["EN ALGÚN LUGAR DE AMÉRICA...", "Aquí rige una única ley:", "'El conocimiento no se regala, se arrebata'.", "Derrota al Guardián de la ciudad  en sus pruebas", "Y reclama por derecho de conquista todo su conocimiento.", "Falla en el intento y te irás con las manos vacias."];
+}
+            else if(ciudadActual === 2) { lineas = ["ZONA DE ALTA RADIACIÓN...", "Has entrado en los dominios de la Ciudad 2.", "Las ruinas aquí esconden secretos antiguos.","Bajo el polvo yacen quienes creyeron que podían vencer al Guardián.","Cada prueba sólo busca tu derrota.", "Demuestra que tu ingenio es superior...", "Y llevate contigo todo el conocimiento de esta ciudad"];}
+            else if(ciudadActual === 3) {lineas = ["Bienvenido al fin del camino...","Bienvenido a la Ciudad X.", "Esta no es una ruina corriente; es un cementerio de ambición.", "Muchos lo intentaron antes que tú, y todos fracasaron.", "Demuestra tu sabiduría o conviértete en otra columna de piedra."];}
 
-            else if(ciudadActual === 2) lineas = ["ZONA DE ALTA RADIACIÓN...", "Has entrado en los dominios de la Ciudad 2.", "Las ruinas aquí esconden secretos antiguos.","Bajo el polvo yacen quienes creyeron que podían vencer al Guardián.","Cada prueba sólo busca tu derrota.", "Demuestra que tu ingenio es superior...", "Y llevate contigo todo el conocimiento de esta ciudad"];
-            else if(ciudadActual === 3) lineas = ["Bienvenido al fin del camino...","Bienvenido a la Ciudad X.", "Esta no es una ruina corriente; es un cementerio de ambición.", "Muchos lo intentaron antes que tú, y todos fracasaron.", "Demuestra tu sabiduría o conviértete en otra columna de piedra."];
+            else if(ciudadActual === 4) {lineas = ["Te encuentra en Ciudad de Oro", "Frente a ti el Sabio Guardián.", "Antes que tú, muchos reyes y héroes lo intentaron,", "Ninguno de ellos poseía el conocimiento suficiente.","Demuestra que tu mente es más afilada que tu espada...", "Y arrebatale por ley todos sus secretos."];}
 
-            else if(ciudadActual === 4) lineas = ["Te encuentra en Ciudad de Oro", "Frente a ti el Sabio Guardián.", "Antes que tú, muchos reyes y héroes lo intentaron,", "Ninguno de ellos poseía el conocimiento suficiente.","Demuestra que tu mente es más afilada que tu espada...", "Y arrebatale por ley todos sus secretos."];
+	    else if(ciudadActual === 5) {lineas = ["Has entrado en la Ciudad de las Sombras.",  "Aquí, la luz es solo un recuerdo lejano.",  "Tres guardianes ocultos vigilan tus pasos,",  "Ellos no juzgan tu fuerza, sino tu voluntad.",   "En la oscuridad, hasta tu propia sombra puede traicionarte...",   "Cruza el umbral y enfrenta aquello que no tiene forma."];}
 
             cont.innerHTML = ""; btnCont.style.opacity = "0";
             clearIntroTimers();
